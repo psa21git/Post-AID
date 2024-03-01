@@ -7,9 +7,17 @@ html{
     scroll-behavior: smooth;
 }
 
+.body{
+    background: url(bg1og.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #navbar{
     display: flex;
     align-items: center;
+    position: sticky;
 }
 
 
@@ -77,8 +85,7 @@ html{
 
 #home::before{
     content: "";
-    background: url(bg1og.jpg)no-repeat;
-    background-size: cover;
+    
     position: absolute;
     top: 0px;
     left: 0px;
@@ -144,6 +151,10 @@ html{
 
 .h-primary{
     text-align: center;
+
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 1); /* Horizontal offset, vertical offset, blur radius, shadow color */
+    -webkit-text-stroke: 2px black; /* WebKit browsers (Safari/Chrome) */
+    text-stroke: 2px black;
     font-size: 5rem;
     padding: 15px;
 }
