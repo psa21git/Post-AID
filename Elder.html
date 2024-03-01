@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elderly Assistance Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      background-image: url(Elderly\ 1.jpeg);
+      background-size: cover;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .panel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .person {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-align: center;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .person:hover {
+      background-color: #e0e0e0;
+    }
+
+    .person img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    #myButton{
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #myButton:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elderly Assistance Service</h1>
+  </header>
+
+  <main>
+
+    <div class="form">
+        
+        Select Time
+        <br>
+        <input type="text">
+            <select name="time">
+                <option value="hours">Hours</option>
+                <option value="days">Days</option>
+                <option value="months">Months</option>
+                <option value="years">Years</option>
+            </select>
+    </div>
+
+    <h2>Choose an Assistant</h2>
+
+    <div id="panel" class="panel">
+      <div class="person" onclick="showDetails('John', 'Caregiver', 'john.jpg','4.5')">
+        <img src="john.jpg" alt="John">
+        <h3>John</h3>
+        <p>Caregiver</p>
+      </div>
+
+      <div class="person" onclick="showDetails('Emily', 'Nurse', 'emily.jpg','2')">
+        <img src="emily.jpg" alt="Emily">
+        <h3>Emily</h3>
+        <p>Nurse</p>
+      </div>
+      <div class="person" onclick="showDetails('Patrik', 'CareTaker', 'patrik.jpg','1')">
+        <img src="patrik.jpg" alt="Patrik">
+        <h3>Patrik</h3>
+        <p>CareTaker</p>
+      </div>
+
+      <!-- Add more people as needed -->
+      <br>
+    </div>
+
+    <div id="details" style="display: none;">
+      <h2>Assistant Details</h2>
+      <p id="assistantName"></p>
+      <p id="assistantRole"></p>
+      <p id="assistantExperience"></p>
+    </div>
+  </main>
+
+  <script>
+    var button = document.createElement("button");
+    button.innerText = "Book Me";
+    button.setAttribute("id", "myButton");
+    button.setAttribute("onclick", "alert('Booked!')");
+    var panel = document.getElementById("panel");
+    
+    function showDetails(name, role, image,exp) {
+      document.getElementById('assistantName').innerText = 'Name: ' + name;
+      document.getElementById('assistantRole').innerText = 'Role: ' + role;
+      document.getElementById('assistantExperience').innerText = 'Experience: ' + exp + ' years';
+      document.getElementById('details').style.display = 'block';
+      panel.appendChild(button);
+    }
+  </script>
+
+</body>
+</html>

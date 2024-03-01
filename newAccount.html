@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Create</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: url(LoginBG.jpeg);
+      background-size: cover;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      box-sizing: border-box;
+
+    }
+
+    .form-group button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+
+    #logo {
+        align-self: center;
+        height: auto;
+        width: 100px;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <img id="logo" src="Logo.png" alt="Post-AID.com">
+    </div>
+    <br>
+    <div class="login-container">
+        <h2>User Registeration<h2>
+        <form class="login-form">
+
+        <div class="form-group">
+            <label for="username">Username/Email:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+        </form>
+    </div>
+
+</body>
+</html>

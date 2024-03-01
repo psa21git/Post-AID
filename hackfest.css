@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+
+#logo{
+    margin: 23px 34px;
+}
+
+#logo img{
+    height: 100px;
+
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+
+}
+
+#navbar ul{
+    float: right;
+    display: flex;
+    font-family: "Lemon variant0", cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(141, 202, 242);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.4;
+
+}
+
+#navbar ul li{
+    font-size: 24px;
+    list-style: none;
+
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 4PX 22px;
+    border-radius: 25px;
+    color: #187484;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black ;
+    background-color: whitesmoke;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 10px;
+    height: 423px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(bg1og.jpg)no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.8;
+}
+
+#home h1{
+    color: rgb(55, 216, 222);
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#home p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-services{
+    margin: 34px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 3px 6px;
+    border-radius:23px ;
+    background-color: whitesmoke;
+}
+
+.about-services .box p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-services .box img {
+    display: block;
+    margin: auto;
+    height: 130px;
+}
+
+#services .box .h-secondary{
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+#services .box .h-secondary:hover{
+    cursor: pointer;
+    border-radius: 23px;
+    /* background-color:wheat; */
+    color: #187484;
+    text-decoration: none;
+    
+}
+
+.h-primary{
+    text-align: center;
+    font-size: 5rem;
+    padding: 15px;
+}
+
+.about1{
+    text-align: center;
+    justify-content: center;
+    font-size: 5rem;
+    padding: 15px;
+
+}
+
+.about{
+    justify-content: center;
+    text-align: center;
+}
+
+.about::before{
+    content: "";
+    /* background: url(../bg11.jpg); */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.5;
+
+}
+.rights{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
